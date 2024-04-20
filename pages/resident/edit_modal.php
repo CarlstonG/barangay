@@ -58,24 +58,24 @@
                         </div>
 
                         <div class="form-group">
-                            <label class="control-label">Civil Status:</label>
+                            <label class="control-label">Nationality:</label>
                             <input name="txt_edit_cstatus" class="form-control input-sm input-size" type="text" value="'.$erow['civilstatus'].'"/>
                         </div>
 
-                        <div class="form-group">
-                            <label class="control-label">Length of Stay: (in Months)</label>
-                            <input name="txt_edit_length" class="form-control input-sm" type="number" min="1" value="'.$erow['lengthofstay'].'"/>
-                        </div>
+                        // <div class="form-group">
+                        //     <label class="control-label">Length of Stay: (in Months)</label>
+                        //     <input name="txt_edit_length" class="form-control input-sm" type="number" min="1" value="'.$erow['lengthofstay'].'"/>
+                        // </div>
 
                         <div class="form-group">
                             <label class="control-label">Nationality:</label>
                             <input name="txt_edit_national" class="form-control input-sm" type="text" value="'.$erow['nationality'].'"/>
                         </div>
 
-                        <div class="form-group">
-                            <label class="control-label">IgpitID:</label>
-                            <input name="txt_edit_igpit" class="form-control input-sm" type="number" value="'.$erow['igpitID'].'" min="1" />
-                        </div>
+                        // <div class="form-group">
+                        //     <label class="control-label">IgpitID:</label>
+                        //     <input name="txt_edit_igpit" class="form-control input-sm" type="number" value="'.$erow['igpitID'].'" min="1" />
+                        // </div>
 
                         <div class="form-group">
                             <label class="control-label">Educational Attainment:</label>
@@ -92,41 +92,42 @@
                                 <option>Doctorate degree</option>
                             </select>
                         </div>
+                        
+                   <div class="form-group">
+                        <label class="control-label">Remarks:</label>
+                        <input name="txt_edit_remarks" class="form-control input-sm" type="text" value="'.$erow['remarks'].'"/>
+                    </div>
+                        // <div class="form-group">
+                        //     <label class="control-label">Land Ownership Status:</label>
+                        //     <select name="ddl_edit_los" class="form-control input-sm">
+                        //         <option value="'.$erow['landOwnershipStatus'].'">'.$erow['landOwnershipStatus'].'</option>
+                        //         <option>Owned</option>
+                        //         <option>Landless</option>
+                        //         <option>Tenant</option>
+                        //         <option>Care Taker</option>
+                        //     </select>
+                        // </div>
 
-                        <div class="form-group">
-                            <label class="control-label">Land Ownership Status:</label>
-                            <select name="ddl_edit_los" class="form-control input-sm">
-                                <option value="'.$erow['landOwnershipStatus'].'">'.$erow['landOwnershipStatus'].'</option>
-                                <option>Owned</option>
-                                <option>Landless</option>
-                                <option>Tenant</option>
-                                <option>Care Taker</option>
-                            </select>
-                        </div>
+                        // <div class="form-group">
+                        //     <label class="control-label">Water Usage:</label>
+                        // 	<select name="txt_edit_water" class="form-control input-sm input-size">
+                        //         <option>'.$erow['waterUsage'].'</option>
+                        //         <option>Faucet</option>
+                        //         <option>Deep Well</option>
+                        //     </select>
+                        // </div>
 
-                        <div class="form-group">
-                            <label class="control-label">Water Usage:</label>
-                        	<select name="txt_edit_water" class="form-control input-sm input-size">
-                                <option>'.$erow['waterUsage'].'</option>
-                                <option>Faucet</option>
-                                <option>Deep Well</option>
-                            </select>
-                        </div>
+                        //  <div class="form-group">
+                        //     <label class="control-label">Sanitary Toilet:</label>
+                        // 	<select name="txt_edit_toilet" class="form-control input-sm input-size">
+                        //         <option>'.$erow['sanitaryToilet'].'</option>
+                        //         <option>Water-sealed</option>
+                        //         <option>Antipolo</option>
+                        //         <option>None</option>
+                        //     </select>
+                        // </div>
 
-                         <div class="form-group">
-                            <label class="control-label">Sanitary Toilet:</label>
-                        	<select name="txt_edit_toilet" class="form-control input-sm input-size">
-                                <option>'.$erow['sanitaryToilet'].'</option>
-                                <option>Water-sealed</option>
-                                <option>Antipolo</option>
-                                <option>None</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label class="control-label">Remarks:</label>
-                            <input name="txt_edit_remarks" class="form-control input-sm" type="text" value="'.$erow['remarks'].'"/>
-                        </div>
+                     
 
                         <div class="form-group">
                             <label class="control-label">Username:</label>

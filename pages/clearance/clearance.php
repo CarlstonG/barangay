@@ -35,7 +35,22 @@
 
                 <!-- Main content -->
                 <section class="content">
-
+                    
+                <div class="btn-group">
+                      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Select ⬇️
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="clearance.pdf" target="_blank">Barangay Clearance</a>
+                            <a class="dropdown-item" href="cert.pdf" target="_blank">Certification</a>
+                            <br>
+                            <a class="dropdown-item" href="indi.pdf" target="_blank">Certificate of Indigency</a>
+                            <div class="dropdown-divider"></div>
+                            
+                        </div>
+                        <br>
+                        </div> 
+                        <br>    
                     <?php
                     if($_SESSION['role'] == "Administrator" || isset($_SESSION['staff']))
                     {
@@ -45,9 +60,10 @@
                         <!-- left column -->
                             <div class="box">
                                 <div class="box-header">
+                                    
                                     <div style="padding:10px;">
                                         
-                                        <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addModal"><i class="fa fa-user-plus" aria-hidden="true"></i> Add Clearance</button>  
+                                        <!-- <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addModal"><i class="fa fa-user-plus" aria-hidden="true"></i> Add Clearance</button>   -->
                                        
                                         <?php 
                                             if(!isset($_SESSION['staff']))
@@ -58,7 +74,8 @@
                                             }
                                         ?>
                                  <a target="_blank" class="btn btn-primary btn-sm" href="clearance_form.php">Print</a>
-                                    </div>                                
+                                    </div>   
+                                                             
                                 </div><!-- /.box-header -->
                                 <div class="box-body table-responsive">
                                 <ul class="nav nav-tabs" id="myTab">

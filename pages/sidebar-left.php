@@ -20,7 +20,7 @@
                     <ul class="sidebar-menu">
                     <li>
                     <a href="../report/report.php">
-                        <i class="fa fa-file"></i> <span>Report</span>
+                        <i class="fa fa-file"></i> <span>Barangay Profile</span>
                     </a>
                 </li>
                             <li>

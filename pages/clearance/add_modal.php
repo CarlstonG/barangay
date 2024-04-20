@@ -5,7 +5,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Manage Clearance</h4>
+                        <h4 class="modal-title">Certificate</h4>
                     </div>
                     <div class="modal-body">
                         
@@ -30,7 +30,7 @@
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <label>Findings:</label>
+                                    <label>Remarks:</label>
                                     <input name="txt_findings" class="form-control input-sm" type="text" placeholder="Findings"/>
                                 </div>
                                 <div class="form-group">
