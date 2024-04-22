@@ -30,6 +30,9 @@
                     <h1>
                         Clearance
                     </h1>
+                    <h5>
+                        Note: Please use barangay Logo printed ready paper no need to print logo by system (by: Programmer)
+                    </h5>
                     
                 </section>
 
@@ -37,7 +40,7 @@
                 <section class="content">
                     
                 <div class="btn-group">
-                      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <!-- <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Select ⬇️
                         </button>
                         <div class="dropdown-menu">
@@ -47,7 +50,7 @@
                             <a class="dropdown-item" href="indi.pdf" target="_blank">Certificate of Indigency</a>
                             <div class="dropdown-divider"></div>
                             
-                        </div>
+                        </div> -->
                         <br>
                         </div> 
                         <br>    
@@ -128,7 +131,48 @@
                                                             <td>'.$row['orNo'].'</td>
                                                             <td>₱ '.number_format($row['samount'],2).'</td>
                                                             <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['pid'].'" data-toggle="modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button>
-                                                            <a target="_blank" href="clearance_form.php?resident='.$row['residentid'].'&clearance='.$row['clearanceNo'].'&val='.base64_encode($row['clearanceNo'].'|'.$row['residentname'].'|'.$row['dateRecorded']).'" onclick="location.reload();" class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Generate</a></td>
+                                                           
+                                                            
+                                                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            Select ⬇️
+                                                        </button>
+                                                        <div class="dropdown-menu">
+                                                        <a target="_blank" href="clearance_form.php?resident='.$row['residentid'].'&clearance='.$row['clearanceNo'].'&val='.base64_encode($row['clearanceNo'].'|'.$row['residentname'].'|'.$row['dateRecorded']).'" class="dropdown-item btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Barangay Clearance</a>
+                                                            <br>
+                                                            <br>
+                                                            <a target="_blank" href="indigency.php?resident='.$row['residentid'].'&clearance='.$row['clearanceNo'].'&val='.base64_encode($row['clearanceNo'].'|'.$row['residentname'].'|'.$row['dateRecorded']).'" class="dropdown-item btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Indigincy</a>
+                                                            <br>
+                                                            <br>
+                                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                                            Certification
+                                                          </button>
+                                                          
+                                                          <!-- Modal -->
+                                                          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog" role="document">
+                                                              <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                  </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                  ...
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                  <button type="button" class="btn btn-primary">Save changes</button>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                            
+                                                        </div>
+
+
+                                                
+</td>
                                                         </tr>
                                                         ';
 
@@ -147,8 +191,13 @@
                                                             <td>'.$row['purpose'].'</td>
                                                             <td>'.$row['orNo'].'</td>
                                                             <td>₱ '.number_format($row['samount'],2).'</td>
-                                                            <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['pid'].'" data-toggle="modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button>
-                                                            <a target="_blank" href="clearance_form.php?resident='.$row['residentid'].'&clearance='.$row['clearanceNo'].'&val='.sha1($row['clearanceNo'].'|'.$row['residentname'].'|'.$row['dateRecorded']).'" onclick="location.reload();" class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Generate</a></td>
+                                                            <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['pid'].'" data-toggle="modal"><i class="fa fa-pencil-square-o" aria-hidden="
+                                                            "></i> Edit</button>
+                                                            <a target="_blank" href="clearance_form.php?resident='.$row['residentid'].'&clearance='.$row['clearanceNo'].'&val='.base64_encode($row['clearanceNo'].'|'.$row['residentname'].'|'.$row['dateRecorded']).'" class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Print</a>
+                                                            
+                                                             <a target="_blank" href="clearance_form.php?resident='.$row['residentid'].'&clearance='.$row['clearanceNo'].'&val='.base64_encode($row['clearanceNo'].'|'.$row['residentname'].'|'.$row['dateRecorded']).'" class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Print</a>
+
+                                                            </td>
                                                         </tr>
                                                         ';
 

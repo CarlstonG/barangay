@@ -111,10 +111,10 @@
                         <p class="text-center">Barangay San Isidro </p>
                         <br>
                         <br>
-                        <p class="text-center" style="font-size: 20px; font-size:bold;"><b style="font-size: 28px;">BARANGAY CLEARANCE</b></p>
+                        <p class="text-center" style="font-size: 20px; font-size:bold;"><b style="font-size: 28px;">CERTIFICATE OF INDIGENCY</b></p>
                         <br>
                         <br>
-                        <p style="font-size: 18px;">TO WHOM IT MAY CONCERN:</p>
+                        <p style="font-size: 18px;" class="text-left">TO WHOM IT MAY CONCERN:</p>
                         <?php
 // Check if 'resident' parameter is set in the URL
 if(isset($_GET['resident'])) {
@@ -128,18 +128,50 @@ if(isset($_GET['resident'])) {
         $bdate = date_create($row['bdate']);
         $date = date_create($row['dateRecorded']);
         ?>
+        <br>
+        <br>
+        <br>
 
-        <p style="text-indent:40px;text-align: justify;">This is to certify that <u><?php echo strtoupper($row['lname'] . ', ' . $row['fname'] . ' ' . $row['mname']); ?></u>, _____ years old, _________, Filipino, <?php echo strtoupper($row['formerAddress']); ?> Negros Oriental. </p>
+
+        <p style="text-indent:10px;text-align: justify;">This is to certify that <u><?php echo strtoupper($row['lname'] . ', ' . $row['fname'] . ' ' . $row['mname']); ?></u>, _____ years old, _________, Filipino, a resident of Barangay San Isidro, Pamplona, Negros Oriental;  </p>
 
         <br>
         <br>
 
-        
+        <p style="text-indent:30px;text-align: justify;">
+        This is to certify further that:      
+        </p> 
         <p style="text-indent:40px;text-align: justify;">
-        This is to certify further that the above-named is of good moral character standing in the community has no case filed against him/her in any tribunal. 
+        ⬜ Above-named resident is an indigent with:   
         </p>   
+        <p style="text-indent:50px;text-align: justify;">
+        ⬜ No income  
+        </p>  
+        <p style="text-indent:50px;text-align: justify;">
+        ⬜ Less than ₱2,000.00 monthly.   
+        </p>  
+        <p style="text-indent:50px;text-align: justify;">
+        ⬜  As such he/she not filed an Income Tax Return being exempted to file same and in lieu of which this certification is issued:   
+        </p>
+        <p style="text-indent:30px;text-align: justify;">
+        This is to certify furthermore that:     
+        </p>  
+        <p style="text-indent:50px;text-align: justify;">
+        ⬜ This certification is issued to support for __________________________ 
+        </p>  
+        <p style="text-indent:50px;text-align: justify;">
+        ⬜ This certification is issued for Burial/Medical Assistance/Cash Assistance.  
+        </p>  
+        <p style="text-indent:50px;text-align: justify;">
+        ⬜  Due to his/her financial capacity, he/she could not hire a private lawyer to represent him/her on a case he/she seeks to file or filed against him/her and thus would seek the assistance of the Public Attorney’s Office.    
+        </p>  
         <br>
         <br>
+        <p style="text-indent:40px;text-align: justify;">
+        Issued this ____ day of __________, ______ at Barangay San Isidro, Pamplona, Negros Oriental.  
+        <br>
+        </p>
+
         <p style="text-indent:40px;text-align: justify;">
         This clearance is being issued upon the request of <u><?php echo strtoupper($row['lname'] . ', ' . $row['fname'] . ' ' . $row['mname']); ?></u> for whatever purpose it may serve him/her best. 
         </p>
@@ -188,8 +220,12 @@ if(isset($_GET['resident'])) {
                         <br><br>
                         <p style="text-align: right;">RENANTE L. BALDADO </p>
                         <p style="text-align: right;">Punong Barangay  </p>
+                 
                     </div>
+                   
                 </div>
+               
+
                 <div class="col-xs-offset-6 col-xs-5 col-md-offset-6 col-md-4" ><br><br><br>
                     
                 </div>
