@@ -66,7 +66,7 @@
                                     
                                     <div style="padding:10px;">
                                         
-                                        <!-- <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addModal"><i class="fa fa-user-plus" aria-hidden="true"></i> Add Clearance</button>   -->
+                                        <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addModal"><i class="fa fa-user-plus" aria-hidden="true"></i> Add Clearance</button>  
                                        
                                         <?php 
                                             if(!isset($_SESSION['staff']))

@@ -97,13 +97,18 @@
                 </div> -->
                 <div class="col-xs-7 col-sm-5 col-md-8" style="background: white;  ">
                             
-                    <div class="pull-right" style="border: 2px solid black;">
+                    <!-- <div class="pull-right" style="border: 2px solid black;">
                        <?php $qry1=mysqli_query($con,"SELECT * from tblresident r left join tblclearance c on c.residentid = r.id where residentid = '".$_GET['resident']."' and clearanceNo = '".$_GET['clearance']."' ");
                             while($row1 = mysqli_fetch_array($qry1)){
                         echo '<image src="../resident/image/'.basename($row1['image']).'" style="width:160px;height:160px;"/>';
                         }
                         ?>
-                    </div>
+                    </div> -->
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
                     <div class="col-xs-12 col-md-12 text-center">
                         <p class="text-center">Republic of the Philippines</p>
                         <p class="text-center">Province of Negros Oriental </p>
